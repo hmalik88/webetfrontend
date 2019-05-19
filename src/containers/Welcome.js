@@ -2,14 +2,19 @@ import React from 'react';
 import '../scss/Welcome.scss'
 import weBetLogo from '../assets/webetsplashlogo.svg'
 import sponsorsLogo from '../assets/sponsors.svg'
+import { withRouter } from 'react-router-dom'
 
-export default class Welcome extends React.Component {
+class Welcome extends React.Component {
 
   constructor(props) {
     super(props)
     let root = document.querySelector('#root');
     root.className = '';
     root.classList.toggle('welcome-root');
+  }
+
+  handleClick = () => {
+    this.props.history.push('/marketplace')
   }
 
   render() {
@@ -19,7 +24,7 @@ export default class Welcome extends React.Component {
           <img src={weBetLogo} className="splash-logo" alt="" />
         </div>
         <div className="welcome-bottom">
-        <div className="login-button">
+        <div className="login-button" onClick={this.handleClick}>
           <div className="login-button-text">The future of betting.</div>
         </div>
           <div className="splash-text">
@@ -35,3 +40,5 @@ outcome of events via an external API and disperse funds accordingly.
 
 
 }
+
+export default withRouter(Welcome);

@@ -1,13 +1,25 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
+import '../scss/Marketplace.scss'
 
-export default class MarketPlace extends React.Component {
+class MarketPlace extends React.Component {
+
+   constructor(props) {
+    super(props)
+    let root = document.querySelector('#root');
+    root.className = '';
+    root.classList.toggle('market-root');
+  }
+
 
   render() {
     return(
-      <div>
+      <>
 
-      </div>
+      </>
       )
   }
 
 }
+
+export default withRouter(MarketPlace);
