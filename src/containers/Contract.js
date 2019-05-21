@@ -20,7 +20,7 @@ export default class Contract extends React.Component {
         <div className="contract-section2">
           <img src={largeContract} alt="" className="large-contract" />
           <div className="contract-info-container">
-            <div className="contract-position"><label className="position-label">Price: </label> $300.00</div>
+            <div className="contract-position"><label className="position-label">Price: </label> > $300.00</div>
             <div className="contract-stake"><label className="stake-label">Stake: </label> 0.15 ETH</div>
             <div className="contract-expiration"><label className="exp-label">Contract Expires: </label>5/25/19</div>
             <div className="bet-button"><div className="bet-btn-txt">Stake opposing position</div></div>
