@@ -13,8 +13,18 @@ export default class YourContracts extends React.Component {
   render() {
     return(
       <>
-
-
+        <div className="yourcontract-inner-grid">
+          <div className="section1-left">
+            <div className="my-contract-title">
+              My Contracts
+            </div>
+          </div>
+          <div className="section1-right">
+            <div className="stake-contract-title">
+              Staked Contracts
+            </div>
+          </div>
+        </div>
       </>
       )
   }
