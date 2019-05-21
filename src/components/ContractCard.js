@@ -1,10 +1,13 @@
 import React from 'react'
 import '../scss/ContractCard.scss'
 import ContractPic from '../assets/contract.svg'
+import { withRouter } from 'react-router-dom'
 
-export default class ContractCard extends React.Component {
+class ContractCard extends React.Component {
 
-
+  handleClick = () => {
+    this.props.history.push('/contract/0x78f5E3f979530781b5967b55cdE1366F65398C82')
+  }
 
   render() {
     return(
@@ -21,3 +24,5 @@ export default class ContractCard extends React.Component {
       )
   }
 }
+
+export default withRouter(ContractCard);

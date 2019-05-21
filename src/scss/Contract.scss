@@ -1,0 +1,94 @@
+.contract-root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 124px 178px auto;
+  width: 100%;
+  height: 100%;
+}
+
+.contract-section1 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contract-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 55px;
+  font-weight: 400;
+  margin-left: 75px;
+}
+
+.contract-address {
+  font-size: 30px;
+  font-weight: 300;
+  position: relative;
+  bottom: 5px;
+  margin-left: 10px;
+}
+
+.contract-section2 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.large-contract {
+  margin-left: 265px;
+}
+
+.contract-info-container {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  width: 514px;
+  height: 389px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  margin-left: 265px;
+  flex-flow: column;
+}
+
+.position-label, .stake-label, .exp-label {
+  font-weight: 500;
+}
+
+.contract-position, .contract-stake {
+  margin-bottom: 30px;
+}
+
+.contract-expiration {
+  margin-bottom: 60px;
+}
+
+
+
+.bet-button {
+  width: 492px;
+  height: 88px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.bet-btn-txt {
+  position: relative;
+  bottom: 5px;
+}
+
+.bet-button:hover {
+  background-color: #EDAE49;
+  color: #000;
+}
+
+
