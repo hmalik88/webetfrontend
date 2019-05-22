@@ -2,15 +2,26 @@
   width: 447px;
   height: 393px;
   border: 3px solid #252729;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 18% 30% 25% 32%;
   position: absolute;
   left: 36%;
   top: 25%;
   border-radius: 20px;
   z-index: 20;
   background-color: #fff;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.16);
+}
+
+.first-modal {
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .bet-title {
@@ -26,4 +37,112 @@
   left: 80px;
   top: 20px;
   cursor: pointer;
+}
+
+.second-modal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.ETH {
+  font-family: 'Oswald', sans-serif;
+  font-size: 65px;
+  font-weight:600;
+  position: relative;
+  margin-left: 47.5px;
+  top: 60px;
+}
+
+.third-modal {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-modal {
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bet-position {
+  position: relative;
+  top: 65px;
+  left: 20px;
+  cursor: pointer;
+  top: 10px;
+}
+
+.dollar-sign {
+  font-family: 'Oswald', sans-serif;
+  font-size: 65px;
+  font-weight:600;
+  position: relative;
+  left: 40px;
+  top: 60px;
+}
+
+.bet-input {
+  width: 109px;
+  height: 73px;
+  border: 1px solid #C4C3C3;
+  position: relative;
+  left: 60px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight:300;
+}
+
+.modal-exp-date {
+  font-family: 'Oswald', sans-serif;
+  font-size: 65px;
+  font-weight:600;
+  position: relative;
+  top: 10px;
+}
+
+.date-input {
+  width: 109px;
+  height: 73px;
+  border: 1px solid #C4C3C3;
+  position: relative;
+  left: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  top: 12.5px;
+}
+
+.create-bet-btn {
+  background-color: #252729;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  border-radius: 20px;
+  width: 207px;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.create-bet-btn:hover {
+  background-color: #EDAE49;
+  color: #000;
 }

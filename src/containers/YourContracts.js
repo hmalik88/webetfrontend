@@ -14,7 +14,7 @@ export default class YourContracts extends React.Component {
 
   handleBetOpen = () => {
     let modal = document.querySelector('.bet-modal');
-    modal.style.display = 'flex';
+    modal.style.display = 'grid';
   }
 
   render() {
