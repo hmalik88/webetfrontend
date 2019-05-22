@@ -1,0 +1,29 @@
+.bet-modal {
+  width: 447px;
+  height: 393px;
+  border: 3px solid #252729;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  left: 36%;
+  top: 25%;
+  border-radius: 20px;
+  z-index: 20;
+  background-color: #fff;
+}
+
+.bet-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 55px;
+  font-weight: 400;
+  position: relative;
+  bottom: 20px;
+}
+
+.bet-close {
+  position: relative;
+  left: 80px;
+  top: 20px;
+  cursor: pointer;
+}

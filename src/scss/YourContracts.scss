@@ -26,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-right: 2px solid #000;
 }
 
 .section1-right {
@@ -34,4 +35,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.section2-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  border-right: 2px solid #000;
+  padding-left: 75px;
+  position: relative;
+}
+
+.section2-right {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  padding-left: 75px;
+  position: relative;
+}
+
+.create-a-bet {
+  width: 218px;
+  height: 62px;
+  background-color: #EDAE49;
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  border: 2px solid #252729;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: calc(50% - 109px);
+  top: 185px;
+  cursor: pointer;
+}
+
+.create-a-bet:hover {
+  background-color: #000;
+  color: #EDAE49;
 }
