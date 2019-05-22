@@ -43,14 +43,14 @@ export default class BetModal extends React.Component {
             <h2 className="ETH">ETH</h2>
             <img className="bet-position" onClick={this.handleBetPosition} src={greaterThan} alt="" />
             <h2 className="dollar-sign">$</h2>
-            <input type="text" className="bet-input" />
+            <input type="text" className="bet-input" required/>
         </div>
         <div className="third-modal">
           <h2 className="modal-exp-date">EXP:</h2>
-          <input type="text" className="date-input" />
+          <input type="date" className="date-input" required/>
         </div>
         <div className="last-modal">
-          <div className="create-bet-btn"><div>CREATE</div></div>
+          <div className="create-bet-btn" onClick={this.handleClose}><div>CREATE</div></div>
         </div>
       </div>
       )

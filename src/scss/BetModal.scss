@@ -96,7 +96,7 @@
 }
 
 .bet-input {
-  width: 109px;
+  width: 120px;
   height: 73px;
   border: 1px solid #C4C3C3;
   position: relative;
@@ -104,6 +104,7 @@
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight:300;
+  padding-left: 10px;
 }
 
 .modal-exp-date {
@@ -115,7 +116,7 @@
 }
 
 .date-input {
-  width: 109px;
+  width: 210px;
   height: 73px;
   border: 1px solid #C4C3C3;
   position: relative;
@@ -124,6 +125,7 @@
   font-size: 40px;
   font-weight: 300;
   top: 12.5px;
+  padding-left: 10px;
 }
 
 .create-bet-btn {
